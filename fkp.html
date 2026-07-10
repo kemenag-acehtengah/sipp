@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Konsultasi Publik | SIPP Kemenag Aceh Tengah</title>
+    <!-- Hubungkan ke Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(21, 115, 71, 0.85), rgba(21, 115, 71, 0.85)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        .form-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 120%; /* Memberikan ruang tinggi teratur untuk form */
+        }
+        .form-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGASI MENU UTAMA -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fa-solid fa-mosque me-2"></i>SIPP KEMENAG ATENGAH
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <!-- Dropdown Pelayanan Publik -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pelayananDropdown" role="button" data-bs-toggle="dropdown">Pelayanan Publik</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pelayanan.html#standar">Standar Pelayanan</a></li>
+                            <li><a class="dropdown-item" href="pelayanan.html#maklumat">Maklumat Pelayanan</a></li>
+                            <li><a class="dropdown-item" href="pelayanan.html#jam">Jam Pelayanan</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="pelayanan.html#kodeetik">Kode Etik Pelayanan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="fkp.html">Forum Konsultasi Publik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tim Pengelola</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Survei SKM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">WBS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER HALAMAN -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="fw-bold">Forum Konsultasi Publik (FKP)</h1>
+            <p class="lead mb-0">Wadah Aspirasi, Masukan, dan Pelibatan Masyarakat dalam Peninjauan Standar Pelayanan</p>
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card border-0 shadow-sm p-4 text-center mb-4">
+                    <h4 class="fw-bold text-success mb-2">Sampaikan Aspirasi Anda</h4>
+                    <p class="text-muted mb-0">Partisipasi Anda sangat berharga bagi kami untuk menyempurnakan kualitas pelayanan publik di lingkungan Kantor Kementerian Agama Kabupaten Aceh Tengah. Silakan isi formulir di bawah ini:</p>
+                </div>
+
+                <!-- Google Form Wrapper (Responsif) -->
+                <div class="card border-0 shadow-sm overflow-hidden p-2">
+                    <div class="form-container">
+                        <!-- ⚠️ GANTI LINK DI BAWAH INI DENGAN LINK GOOGLE FORM ANDA -->
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD_X-v-gW51bUe6nJ3ZExTUtg1ZtD5l1z8_kM_g7N3hFBAXw/viewform?embedded=true">Loading…</iframe>
+                    </div>
+                </div>
+              <!-- BAGIAN ARSIP LAPORAN FKP TAHUNAN -->
+                <div class="mt-5 mb-4 text-center">
+                    <hr class="my-4">
+                    <h4 class="fw-bold text-success"><i class="fa-solid fa-folder-open me-2"></i>Arsip Publikasi Laporan FKP</h4>
+                    <p class="text-muted">Bentuk transparansi pelaksanaan Forum Konsultasi Publik yang diselenggarakan berkala setiap tahun.</p>
+                </div>
+
+                <div class="row g-3">
+                    <!-- Laporan Tahun Terbaru (2026) -->
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex flex-column justify-content-between p-4">
+                                <div>
+                                    <span class="badge bg-success mb-2">Terbaru</span>
+                                    <h5 class="fw-bold mb-1">Laporan FKP Tahun 2026</h5>
+                                    <p class="small text-muted mb-3"><i class="fa-solid fa-calendar-days me-1"></i> Pelaksanaan: Juni 2026</p>
+                                    <p class="text-muted small">Memuat berita acara, daftar hadir, dokumentasi, dan tindak lanjut perbaikan standar pelayanan hasil diskusi tahun 2026.</p>
+                                </div>
+                                <!-- Jalur Link File PDF (Bisa diganti link Google Drive atau nama file di GitHub) -->
+                                <a href="laporan-fkp-2026.pdf" target="_blank" class="btn btn-outline-success w-100 mt-3">
+                                    <i class="fa-solid fa-file-pdf me-2"></i>Unduh Laporan (PDF)
+                                bagikan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Laporan Tahun Sebelumnya (2025) -->
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex flex-column justify-content-between p-4">
+                                <div>
+                                    <span class="badge bg-secondary mb-2">Arsip</span>
+                                    <h5 class="fw-bold mb-1">Laporan FKP Tahun 2025</h5>
+                                    <p class="small text-muted mb-3"><i class="fa-solid fa-calendar-days me-1"></i> Pelaksanaan: Mei 2025</p>
+                                    <p class="text-muted small">Laporan evaluasi dan masukan masyarakat mengenai standar pelayanan administrasi nikah dan haji tahun anggaran 2025.</p>
+                                </div>
+                                <a href="#" target="_blank" class="btn btn-outline-secondary w-100 mt-3 disabled">
+                                    <i class="fa-solid fa-file-pdf me-2"></i>Unduh Laporan (PDF)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Kemenag Kabupaten Aceh Tengah. All Rights Reserved.</p>
+            <small class="text-muted"><i class="fa-solid fa-map-marker-alt me-2"></i>Takengon, Kabupaten Aceh Tengah, Provinsi Aceh</small>
+        </div>
+    </footer>
+
+    <!-- Hubungkan ke Bootstrap JavaScript via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -177,5 +177,34 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Kode Otomatis Membuka Tab Sesuai Klik Menu Dropdown -->
+    <script>
+        function bukaTabSesuaiUrl() {
+            var hash = window.location.hash;
+            if (hash) {
+                // Petakan hash URL ke ID tombol tab masing-masing
+                var tabId = "";
+                if (hash === "#standar") tabId = "#v-pills-standar-tab";
+                else if (hash === "#maklumat") tabId = "#v-pills-maklumat-tab";
+                else if (hash === "#jam") tabId = "#v-pills-jam-tab";
+                else if (hash === "#kodeetik") tabId = "#v-pills-kodeetik-tab";
+
+                if (tabId) {
+                    var triggerEl = document.querySelector(tabId);
+                    if (triggerEl) {
+                        var tab = new bootstrap.Tab(triggerEl);
+                        tab.show();
+                        // Scroll halus ke arah konten agar pas di layar HP
+                        triggerEl.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            }
+        }
+
+        // Jalankan saat halaman pertama kali dimuat
+        window.addEventListener('DOMContentLoaded', bukaTabSesuaiUrl);
+        // Jalankan jika pengguna memilih menu lain saat sudah berada di halaman yang sama
+        window.addEventListener('hashchange', bukaTabSesuaiUrl);
+    </script>
 </body>
 </html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survei Kepuasan Masyarakat | SIPP Kemenag Aceh Tengah</title>
+    <!-- Hubungkan ke Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(21, 115, 71, 0.85), rgba(21, 115, 71, 0.85)), url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        .form-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 130%; /* Memberikan ruang tinggi ekstra untuk kuesioner */
+        }
+        .form-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGASI MENU UTAMA -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fa-solid fa-mosque me-2"></i>SIPP KEMENAG ATENGAH
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <!-- Dropdown Pelayanan Publik -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pelayananDropdown" role="button" data-bs-toggle="dropdown">Pelayanan Publik</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pelayanan.html#standar">Standar Pelayanan</a></li>
+                            <li><a class="dropdown-item" href="pelayanan.html#maklumat">Maklumat Pelayanan</a></li>
+                            <li><a class="dropdown-item" href="pelayanan.html#jam">Jam Pelayanan</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="pelayanan.html#kodeetik">Kode Etik Pelayanan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="fkp.html">Forum Konsultasi Publik</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tim.html">Tim Pengelola</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="skm.html">Survei SKM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">WBS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER HALAMAN -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="fw-bold">Survei Kepuasan Masyarakat (SKM)</h1>
+            <p class="lead mb-0">Evaluasi Berkala Kinerja Pelayanan demi Perbaikan yang Berkesinambungan</p>
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                
+                <!-- PENGANTAR -->
+                <div class="card border-0 shadow-sm p-4 text-center mb-4">
+                    <h4 class="fw-bold text-success mb-2">Bantu Kami Meningkatkan Pelayanan</h4>
+                    <p class="text-muted mb-0">Silakan berikan penilaian objektif Anda setelah menerima layanan dari kami. Pengisian kuesioner ini memakan waktu kurang dari 3 menit.</p>
+                </div>
+
+                <!-- GOOGLE FORM SKM (RESPONSIF) -->
+                <div class="card border-0 shadow-sm overflow-hidden p-2 mb-5">
+                    <div class="form-container">
+                        <!-- ⚠️ GANTI LINK DI BAWAH INI DENGAN LINK GOOGLE FORM SKM ANDA -->
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD_X-v-gW51bUe6nJ3ZExTUtg1ZtD5l1z8_kM_g7N3hFBAXw/viewform?embedded=true">Loading…</iframe>
+                    </div>
+                </div>
+
+                <!-- PUBLIKASI LAPORAN NILAI IKM -->
+                <div class="text-center mb-4">
+                    <hr class="my-4">
+                    <h4 class="fw-bold text-success"><i class="fa-solid fa-square-poll-vertical me-2"></i>Laporan Hasil Indeks IKM</h4>
+                    <p class="text-muted">Hasil pengolahan data survei kepuasan yang dipublikasikan secara berkala sebagai akuntabilitas kinerja kantor.</p>
+                </div>
+
+                <div class="row g-3">
+                    <!-- Contoh Nilai IKM Periode Terbaru -->
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                            <h6 class="text-muted text-uppercase fw-bold small">Indeks Kepuasan Terakhir</h6>
+                            <div class="display-3 fw-bold text-success my-2">87.50</div>
+                            <span class="badge bg-success mx-auto px-3 py-2 mb-3 fs-6">SANGAT BAIK (A)</span>
+                            <p class="small text-muted mb-0">Berdasarkan hasil rekapitulasi data SKM Periode Semester II Tahun Berjalan.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tombol Download Dokumen Laporan Komplit -->
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow-sm p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="fw-bold mb-2">Unduh Dokumen Resmi</h5>
+                                <p class="text-muted small">Dapatkan naskah lengkap infografis unsur penilaian, analisis kelemahan, serta rekomendasi tindak lanjut hasil SKM.</p>
+                            </div>
+                            <!-- Nanti bisa di-upload file PDF dengan nama berikut ke GitHub -->
+                            <a href="laporan-skm-terbaru.pdf" target="_blank" class="btn btn-outline-success w-100 mt-3">
+                                <i class="fa-solid fa-file-pdf me-2"></i>Unduh Laporan Komplit (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Kemenag Kabupaten Aceh Tengah. All Rights Reserved.</p>
+            <small class="text-muted"><i class="fa-solid fa-map-marker-alt me-2"></i>Takengon, Kabupaten Aceh Tengah, Provinsi Aceh</small>
+        </div>
+    </footer>
+
+    <!-- Hubungkan ke Bootstrap JavaScript via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

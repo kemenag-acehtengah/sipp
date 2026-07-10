@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tim Pelayanan & Pengaduan | SIPP Kemenag Aceh Tengah</title>
+    <title>Tim Pengelola & Pengaduan | SIPP Kemenag Aceh Tengah</title>
     <!-- Hubungkan ke Bootstrap CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome untuk Icon -->
@@ -15,6 +15,12 @@
             color: white;
             padding: 60px 0;
             margin-bottom: 40px;
+        }
+        .contact-card {
+            transition: transform 0.2s;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
         }
     </style>
 </head>
@@ -56,82 +62,98 @@
     <header class="page-header text-center">
         <div class="container">
             <h1 class="fw-bold">Tim Pelayanan & Pengelola Pengaduan</h1>
-            <p class="lead mb-0">Komitmen Kami Menyediakan Pelayanan yang Responsif, Cepat, dan Transparan</p>
+            <p class="lead mb-0">Profil Petugas Pelaksana serta Saluran Resmi Komunikasi dan Pengaduan Layanan</p>
         </div>
     </header>
 
     <!-- KONTEN UTAMA -->
     <main class="container mb-5">
         
-        <!-- BAGIAN 1: TIM PELAYANAN UTAMA -->
-        <div class="text-center mb-4">
-            <h3 class="fw-bold text-success">Petugas Meja Pelayanan (Front Office)</h3>
-            <p class="text-muted">Aparatur yang siap menyambut dan melayani Anda dengan ramah di Unit Layanan Terpadu (ULT)</p>
-        </div>
+        <!-- BAGIAN 1: PROFIL TIM UTAMA -->
+        <section class="mb-5">
+            <div class="text-center mb-4">
+                <h3 class="fw-bold text-success">Struktur Tim Pelayanan Publik</h3>
+                <p class="text-muted">Aparatur penanggung jawab kepastian standar pelayanan pada Kantor Kemenag Kabupaten Aceh Tengah</p>
+            </div>
 
-        <div class="row g-4 justify-content-center mb-5">
-            <!-- Profil Petugas 1 -->
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm text-center p-3 h-100">
-                    <div class="card-body">
-                        <i class="fa-solid fa-user-tie text-success fa-4x mb-3"></i>
-                        <h5 class="fw-bold mb-1">Nama Petugas ULT 1</h5>
-                        <p class="text-success small fw-bold mb-3">Layanan Haji & Umrah</p>
-                        <p class="text-muted small">Siap melayani informasi pendaftaran, pembatalan, dan cek porsi keberangkatan haji Anda.</p>
+            <div class="row g-4 justify-content-center">
+                <!-- Penanggung Jawab -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="card-body">
+                            <i class="fa-solid fa-user-tie text-success fa-4x mb-3"></i>
+                            <h5 class="card-title fw-bold">Kepala Kantor</h5>
+                            <p class="text-muted small mb-2">Penanggung Jawab Utama SIPP</p>
+                            <span class="badge bg-light text-success border border-success px-3">Kemenag Aceh Tengah</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ketua Tim -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="card-body">
+                            <i class="fa-solid fa-user-gear text-success fa-4x mb-3"></i>
+                            <h5 class="card-title fw-bold">Kasubbag Tata Usaha</h5>
+                            <p class="text-muted small mb-2">Ketua Tim Pengelola Pelayanan</p>
+                            <span class="badge bg-light text-success border border-success px-3">Kemenag Aceh Tengah</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Petugas Pengaduan / Humas -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="card-body">
+                            <i class="fa-solid fa-user-shield text-success fa-4x mb-3"></i>
+                            <h5 class="card-title fw-bold">Tim Humas & Pengaduan</h5>
+                            <p class="text-muted small mb-2">Pelaksana & Admin Pengelola Informasi</p>
+                            <span class="badge bg-light text-success border border-success px-3">Kemenag Aceh Tengah</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Profil Petugas 2 -->
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm text-center p-3 h-100">
-                    <div class="card-body">
-                        <i class="fa-solid fa-user-tie text-success fa-4x mb-3"></i>
-                        <h5 class="fw-bold mb-1">Nama Petugas ULT 2</h5>
-                        <p class="text-success small fw-bold mb-3">Layanan KUA & Bimas Islam</p>
-                        <p class="text-muted small">Siap melayani informasi syarat nikah, rekomendasi pindah nikah, dan kemitraan umat Islam.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <hr class="my-5">
 
-        <!-- BAGIAN 2: SALURAN PENGADUAN RESMI -->
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card border-0 shadow-sm p-4 bg-light-subtle">
-                    <div class="card-body text-center">
-                        <i class="fa-solid fa-headset text-danger fa-3x mb-3"></i>
-                        <h3 class="fw-bold text-dark mb-2">Pusat Pengaduan Layanan</h3>
-                        <p class="text-muted mb-4">Jika Anda menemukan ketidaksesuaian standar pelayanan, petugas tidak ramah, atau adanya kendala lainnya, silakan hubungi tim manajemen pengelola pengaduan kami melalui saluran di bawah ini:</p>
-                        
-                        <div class="row g-3 justify-content-center">
-                            <!-- Kontak WhatsApp -->
-                            <div class="col-sm-6">
-                                <div class="p-3 border rounded bg-white shadow-sm">
-                                    <h6 class="fw-bold mb-2"><i class="fa-brands fa-whatsapp text-success me-2 fs-5"></i>WhatsApp Pengaduan</h6>
-                                    <!-- ⚠️ GANTI nomor WA kantor Anda di bawah ini (Gunakan kode negara 62) -->
-                                    <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-success btn-sm w-100 fw-bold">
-                                        Hubungi WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Kontak Email -->
-                            <div class="col-sm-6">
-                                <div class="p-3 border rounded bg-white shadow-sm">
-                                    <h6 class="fw-bold mb-2"><i class="fa-solid fa-envelope text-primary me-2 fs-5"></i>Email Pengaduan</h6>
-                                    <!-- ⚠️ GANTI email kantor Anda di bawah ini -->
-                                    <a href="mailto:acehtengah@kemenag.go.id" class="btn btn-primary btn-sm w-100 fw-bold">
-                                        Kirim Email Resmi
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+        <!-- BAGIAN 2: SALURAN PENGADUAN / HUBUNGI KAMI -->
+        <section>
+            <div class="text-center mb-4">
+                <h3 class="fw-bold text-success">Saluran Hubungan & Pengaduan Cepat</h3>
+                <p class="text-muted">Masyarakat dapat berkoordinasi, bertanya informasi, atau mengadukan kendala layanan langsung via kanal resmi berikut:</p>
+            </div>
 
+            <div class="row g-4 justify-content-center">
+                <!-- Saluran WhatsApp -->
+                <div class="col-md-5">
+                    <div class="card h-100 border-0 shadow-sm p-3 contact-card">
+                        <div class="card-body text-center">
+                            <i class="fa-brands fa-whatsapp text-success fa-4x mb-3"></i>
+                            <h5 class="fw-bold">Layanan WhatsApp Center</h5>
+                            <p class="text-muted small">Respon cepat informasi standar pelayanan dan koordinasi via pesan obrolan.</p>
+                            <!-- GANTI nomor 628123456789 di bawah dengan nomor WhatsApp admin kantor Anda -->
+                            <a href="https://wa.me/628123456789?text=Halo%20Admin%20SIPP%20Kemenag%20Aceh%20Tengah" target="_blank" class="btn btn-success w-100 mt-2">
+                                <i class="fa-brands fa-whatsapp me-2"></i>Hubungi WhatsApp Admin
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saluran Email -->
+                <div class="col-md-5">
+                    <div class="card h-100 border-0 shadow-sm p-3 contact-card">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-envelope text-danger fa-4x mb-3"></i>
+                            <h5 class="fw-bold">Persuratan & Email Resmi</h5>
+                            <p class="text-muted small">Kirimkan berkas digital, pertanyaan resmi, atau aduan tertulis via surat elektronik.</p>
+                            <!-- GANTI email di bawah dengan email resmi kantor Anda -->
+                            <a href="mailto:kabacehtengah@kemenag.go.id" class="btn btn-danger w-100 mt-2">
+                                <i class="fa-solid fa-envelope me-2"></i>Kirim Email Resmi
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
     </main>
 

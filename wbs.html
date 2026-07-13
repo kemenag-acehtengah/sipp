@@ -16,21 +16,10 @@
             padding: 60px 0;
             margin-bottom: 40px;
         }
-        .form-container {
-            position: relative;
+        .tally-wrapper iframe {
             width: 100%;
-            overflow: hidden;
-            padding-top: 130%; 
-        }
-        .form-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
             border: none;
+            min-height: 600px; /* Batas minimum awal sebelum auto-resize */
         }
     </style>
 </head>
@@ -86,13 +75,16 @@
                     <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-shield-halved me-2"></i>Jaminan Kerahasiaan Pelapor</h5>
                     <p class="text-muted small mb-0">Kantor Kementerian Agama Kabupaten Aceh Tengah berkomitmen melindungi kerahasiaan identitas Anda sebagai pelapor (*whistleblower*). Formulir ini dikonfigurasi secara anonim tanpa merekam alamat email Anda secara otomatis. Laporkan segala bentuk pungli, gratifikasi, atau pelanggaran hukum demi mewujudkan instansi yang bersih.</p>
                 </div>
-
-                <!-- GOOGLE FORM WBS (RESPONSIF) -->
-                <div class="card border-0 shadow-sm overflow-hidden p-2">
-                    <div class="form-container">
-                        <!-- Tally.so Form WBS -->
-                        <iframe src="https://tally.so/embed/jaYB7J?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0" title="Whistleblowing System">Loading…</iframe>
-                    </div>
+                
+                <!-- Tally.so Form WBS Tanpa Scrollbar -->
+                <div class="card border-0 shadow-sm p-3 tally-wrapper">
+                    <iframe 
+                        src="https://tally.so/embed/jaYB7J?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                        loading="lazy" 
+                        title="Whistleblowing System (WBS)">
+                    </iframe>
+                    <!-- Script Resmi Tally untuk Otomatis Menyesuaikan Tinggi Form -->
+                    <script async src="https://tally.so/widgets/embed.js"></script>
                 </div>
 
             </div>

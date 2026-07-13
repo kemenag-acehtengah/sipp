@@ -16,21 +16,10 @@
             padding: 60px 0;
             margin-bottom: 40px;
         }
-        .form-container {
-            position: relative;
+        .tally-wrapper iframe {
             width: 100%;
-            overflow: hidden;
-            padding-top: 130%; /* Memberikan ruang tinggi ekstra untuk kuesioner */
-        }
-        .form-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
             border: none;
+            min-height: 600px;
         }
     </style>
 </head>
@@ -87,12 +76,17 @@
                     <p class="text-muted mb-0">Silakan berikan penilaian objektif Anda setelah menerima layanan dari kami. Pengisian kuesioner ini memakan waktu kurang dari 3 menit.</p>
                 </div>
 
-                <!-- GOOGLE FORM SKM (RESPONSIF) -->
-                <div class="card border-0 shadow-sm overflow-hidden p-2 mb-5">
-                    <div class="form-container">
-                        <!-- ⚠️ GANTI LINK DI BAWAH INI DENGAN LINK GOOGLE FORM SKM ANDA -->
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD_X-v-gW51bUe6nJ3ZExTUtg1ZtD5l1z8_kM_g7N3hFBAXw/viewform?embedded=true">Loading…</iframe>
-                    </div>
+               <!-- GOOGLE FORM SKM diganti Tally (RESPONSIF) -->
+                <div class="card border-0 shadow-sm p-3 tally-wrapper">
+                    <!-- 1. Kotak Iframe Form Tally -->
+                    <iframe 
+                        src="https://tally.so/embed/BzlGjQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                        loading="lazy" 
+                        title="Survei Kepuasan Masyarakat">
+                    </iframe>
+                    
+                    <!-- 2. TAG SCRIPT YANG DIMAKSUD DILETAKKAN DI SINI -->
+                    <script async src="https://tally.so/widgets/embed.js"></script>
                 </div>
 
                 <!-- PUBLIKASI LAPORAN NILAI IKM -->
